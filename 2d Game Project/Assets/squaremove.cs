@@ -9,8 +9,6 @@ public class squaremove : MonoBehaviour
     void Start()
     {
 //comment by brian
-//another
-//kkl
     }
 
     // Update is called once per frame
