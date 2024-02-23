@@ -5,10 +5,10 @@ using UnityEngine;
 public class squaremove : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject square;
+
     void Start()
     {
-//comment by brian
+        
     }
 
     // Update is called once per frame
