@@ -1,105 +1,114 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class MazeGenerator : MonoBehaviour
 {
+    public class Cell
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public int gridX { get; set; }
+        public int gridY { get; set; }
+        public List<Cell> Neighbors { get; set; }
+
+        public Cell(int x, int y, int cellSize)
+        {
+            X = x;
+            Y = y;
+            gridX = x * cellSize + cellSize / 2;
+            gridY = y * cellSize + cellSize / 2;
+            Neighbors = new List<Cell>();
+        }
+    }
+
     public int width = 10;
     public int height = 10;
-    private int[,] maze;
-    private List<Vector2> walls;
+    public int cellSize = 5;
+    private List<Cell> cells;
+    private System.Random rand = new System.Random();
 
     void Start()
     {
         GenerateMaze();
-        PrintMaze();
     }
 
     void GenerateMaze()
     {
-        maze = new int[height, width];
-        walls = new List<Vector2>();
-
-        // Initialize maze with walls
-        for (int y = 0; y < height; y++)
+        cells = new List<Cell>();
+        for (int x = 0; x < width; x++)
         {
-            for (int x = 0; x < width; x++)
+            for (int y = 0; y < height; y++)
             {
-                maze[y, x] = 1;
+                cells.Add(new Cell(x, y, cellSize));
             }
         }
 
-        // Start from a random point
-        int startX = Random.Range(0, width);
-        int startY = Random.Range(0, height);
-        maze[startY, startX] = 0;
-
-        AddWalls(startX, startY);
-
-        while (walls.Count > 0)
+        foreach (Cell cell in cells)
         {
-            // Pick a random wall
-            int randomIndex = Random.Range(0, walls.Count);
-            Vector2 wall = walls[randomIndex];
-            walls.RemoveAt(randomIndex);
-
-            int x = (int)wall.x;
-            int y = (int)wall.y;
-
-            // Check if it is linking the maze to a cell containing a wall
-            if (x > 1 && maze[y, x - 2] == 1)
+            if (cell.X > 0)
             {
-                maze[y, x - 1] = maze[y, x - 2] = 0;
-                AddWalls(x - 2, y);
+                cell.Neighbors.Add(cells.Find(c => c.X == cell.X - 1 && c.Y == cell.Y));
             }
-            else if (x < width - 2 && maze[y, x + 2] == 1)
+            if (cell.X < width - 1)
             {
-                maze[y, x + 1] = maze[y, x + 2] = 0;
-                AddWalls(x + 2, y);
+                cell.Neighbors.Add(cells.Find(c => c.X == cell.X + 1 && c.Y == cell.Y));
             }
-            else if (y > 1 && maze[y - 2, x] == 1)
+            if (cell.Y > 0)
             {
-                maze[y - 1, x] = maze[y - 2, x] = 0;
-                AddWalls(x, y - 2);
+                cell.Neighbors.Add(cells.Find(c => c.X == cell.X && c.Y == cell.Y - 1));
             }
-            else if (y < height - 2 && maze[y + 2, x] == 1)
+            if (cell.Y < height - 1)
             {
-                maze[y + 1, x] = maze[y + 2, x] = 0;
-                AddWalls(x, y + 2);
+                cell.Neighbors.Add(cells.Find(c => c.X == cell.X && c.Y == cell.Y + 1));
             }
         }
-    }
 
-    void AddWalls(int x, int y)
-    {
-        if (x > 1 && maze[y, x - 2] == 1)
-        {
-            walls.Add(new Vector2(x - 2, y));
-        }
-        if (x < width - 2 && maze[y, x + 2] == 1)
-        {
-            walls.Add(new Vector2(x + 2, y));
-        }
-        if (y > 1 && maze[y - 2, x] == 1)
-        {
-            walls.Add(new Vector2(x, y - 2));
-        }
-        if (y < height - 2 && maze[y + 2, x] == 1)
-        {
-            walls.Add(new Vector2(x, y + 2));
-        }
-    }
+        List<Cell> unvisited = new List<Cell>(cells);
+        List<Cell> removed = new List<Cell>();
+        Cell current = cells[0];
+        unvisited.Remove(current);
+        removed.Add(current);
 
-    void PrintMaze()
-    {
-        string mazeString = "";
-        for (int y = 0; y < height; y++)
+        while (unvisited.Count > 0)
         {
-            for (int x = 0; x < width; x++)
+            List<Cell> edges = new List<Cell>();
+            foreach (Cell cell in cells.Except(unvisited))
             {
-                mazeString += maze[y, x] == 1 ? " | " : "   ";
+                edges.AddRange(cell.Neighbors.Intersect(unvisited));
             }
-            mazeString += "\n";
+
+            Cell next = edges[rand.Next(edges.Count)];
+            Cell neighbor = next.Neighbors.Intersect(cells.Except(unvisited)).First();
+
+            next.Neighbors.Remove(neighbor);
+            neighbor.Neighbors.Remove(next);
+
+            unvisited.Remove(next);
+            removed.Add(next);
+            current = next;
         }
-        Debug.Log(mazeString);
+
+
+
+        foreach (Cell cell in cells)
+        {
+            string neighbors = "";
+            string removedCells = "";
+            foreach (Cell neighbor in cell.Neighbors)
+            {
+                neighbors += "(" + neighbor.X + ", " + neighbor.Y + ") ";
+            }
+            //removed cells
+            foreach (Cell removedCell in removed)
+            {
+                if (cell.X == removedCell.X && cell.Y == removedCell.Y)
+                {
+                    removedCells += "(" + removedCell.X + ", " + removedCell.Y + ") ";
+                }
+            }
+            print("(" + cell.X + ", " + cell.Y + "): " + neighbors + " Removed: " + removedCells);
+        }
+
     }
 }
