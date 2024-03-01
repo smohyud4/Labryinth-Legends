@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 69
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecfb0e96a9b8264eb7a707b716b8db4
+      internalID: -785482155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 69
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0075a6cb25ed943ae17e2fd1f27e4a
+      internalID: 1820096306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 69
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81d81208a009db468fa1ccaaec8d5ba
+      internalID: -699140034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 69
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c81eac2535883d4abbf28d2cb3b75e4
+      internalID: 1230566491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 17
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac96f6cffb3904c48a44fa5258f06bc2
+      internalID: 1852406072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 17
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6115eb0828baad042a3b79cec79bd5cb
+      internalID: 1492762506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 17
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4067a5834eb352246969ebb39488c93e
+      internalID: -1998252025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Idle_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 17
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0073942f9a597646be9fc5c8816ea79
+      internalID: 282120203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Civilian1(black)_Idle_0: -785482155
+      Civilian1(black)_Idle_1: 1820096306
+      Civilian1(black)_Idle_2: -699140034
+      Civilian1(black)_Idle_3: 1230566491
+      Civilian1(black)_Idle_4: 1852406072
+      Civilian1(black)_Idle_5: 1492762506
+      Civilian1(black)_Idle_6: -1998252025
+      Civilian1(black)_Idle_7: 282120203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

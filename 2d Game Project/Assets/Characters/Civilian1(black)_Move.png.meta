@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,679 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 381
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb67a114f8e97154082dfa3c3edb4d79
+      internalID: -1135746920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 381
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366b68e694ed7b04b82a106c6c98d243
+      internalID: -2124632161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 381
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500adf5e56d10284f8e6ad0ac688fec0
+      internalID: -508505613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_3
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 381
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbbccd5b129acf45b745d6b63d1f395
+      internalID: 1383872247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 329
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab0b198b6763b24ea506c1e8ecac529
+      internalID: -1217551325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_5
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 328
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d279f79a775364789ad8e0ed391782
+      internalID: 1700262576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_6
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 329
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59f0041e49edaf4f932cd9df51ea767
+      internalID: -1230668930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_7
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 329
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f4ba7080c86cc4fbc6411082c49f9d
+      internalID: -184650234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 277
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3636b40308da5743bc93a288132170c
+      internalID: -1605725697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 277
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedf6f946ee0eb84d84c2de32ed49643
+      internalID: -688746447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_10
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 277
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45ce30dd2fda0d42be6a5a228633820
+      internalID: 87622540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_11
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 277
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c271a57f952f94b8e90d448f785c87
+      internalID: 202562400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 225
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292d8ee8a19ec8a4881484f843adc593
+      internalID: 1884701676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 225
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e26a49c0eb88114caf131fe75d65f50
+      internalID: 1879144191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_14
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 225
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2966bba7c8f2474e9a530aba727ef24
+      internalID: -1277987881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077731fd7dd78914f8977811a274da6c
+      internalID: 278499982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 173
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935f7c33077b90c469cb5f6148b9da86
+      internalID: -68360353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 172
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca512d6cbdab3304e9a4bfc0d267eccd
+      internalID: 1452175692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_18
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 173
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f059c8e82a98645a3e3b368d43d5a3
+      internalID: -401329891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_19
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 172
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df76e2a178c0ee4a9f8ba35d5faf986
+      internalID: -453563559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_20
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 121
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d22a3210ba5af8449ba0f06e80d2372
+      internalID: -400838515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 121
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256b95d06875c9c48b3ed54a2b7f487f
+      internalID: -157368698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_22
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 121
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1293cd5113bf2f48a56cad2feeabb2f
+      internalID: 577618917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_23
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 120
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4e00e810429f544a7895b4d7df17d2
+      internalID: 1846258478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_24
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 69
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00f9bd97f546574f9afc7f7b1274815
+      internalID: 1195279076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 69
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e296007dad09994a969788dbfc69353
+      internalID: -409763871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_26
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 69
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf38080a22e7e349a42db3a4b644976
+      internalID: 800597641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_27
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 69
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26efa3f1801f3d4486a199e63d09fa3
+      internalID: -629254833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_28
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 17
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a7fd2f79a325644b6b6bd3f350ee19
+      internalID: -1994978603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 16
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f7bcad318f17d45a74ceb6e5dea4c5
+      internalID: 1875808363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_30
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 17
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3854ab5cca6c081478778f9932665ada
+      internalID: 1247872075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Move_31
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 17
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56060e45a105aae45a20ab059c1ccd17
+      internalID: -460251301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +804,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Civilian1(black)_Move_0: -1135746920
+      Civilian1(black)_Move_1: -2124632161
+      Civilian1(black)_Move_10: 87622540
+      Civilian1(black)_Move_11: 202562400
+      Civilian1(black)_Move_12: 1884701676
+      Civilian1(black)_Move_13: 1879144191
+      Civilian1(black)_Move_14: -1277987881
+      Civilian1(black)_Move_15: 278499982
+      Civilian1(black)_Move_16: -68360353
+      Civilian1(black)_Move_17: 1452175692
+      Civilian1(black)_Move_18: -401329891
+      Civilian1(black)_Move_19: -453563559
+      Civilian1(black)_Move_2: -508505613
+      Civilian1(black)_Move_20: -400838515
+      Civilian1(black)_Move_21: -157368698
+      Civilian1(black)_Move_22: 577618917
+      Civilian1(black)_Move_23: 1846258478
+      Civilian1(black)_Move_24: 1195279076
+      Civilian1(black)_Move_25: -409763871
+      Civilian1(black)_Move_26: 800597641
+      Civilian1(black)_Move_27: -629254833
+      Civilian1(black)_Move_28: -1994978603
+      Civilian1(black)_Move_29: 1875808363
+      Civilian1(black)_Move_3: 1383872247
+      Civilian1(black)_Move_30: 1247872075
+      Civilian1(black)_Move_31: -460251301
+      Civilian1(black)_Move_4: -1217551325
+      Civilian1(black)_Move_5: 1700262576
+      Civilian1(black)_Move_6: -1230668930
+      Civilian1(black)_Move_7: -184650234
+      Civilian1(black)_Move_8: -1605725697
+      Civilian1(black)_Move_9: -688746447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
