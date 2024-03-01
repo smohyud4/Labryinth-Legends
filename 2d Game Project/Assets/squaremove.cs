@@ -8,7 +8,7 @@ public class squaremove : MonoBehaviour
     public GameObject square;
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
