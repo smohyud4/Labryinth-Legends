@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,7 +121,679 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 381
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0191945e4f167f74b854be1831abb930
+      internalID: 166714176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 381
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68c902aba028fc4782217f3d8eaf245
+      internalID: 1077172628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 378
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1664fb729a8710f479322962d70a7434
+      internalID: -602893830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 378
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92cc66275272234f8887ae7f14effa8
+      internalID: -2061663383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 329
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fa00c858dc2c14da5abd96599567af
+      internalID: 1632404641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 329
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e9608fc36328f438cc419512c72938
+      internalID: -1977177934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 329
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ebc1901933b844ea4cd3632913ad21
+      internalID: 679095911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 329
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3362c06c2efc204aaa10daec0f77ff6
+      internalID: 1206594446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 277
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1642e84ca98c9d449b46c02f1e95f6d4
+      internalID: 726242539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 277
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93140c3f920a2094eb366e704dea26c0
+      internalID: -2033236434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 277
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4add4a04de8526f4cb06fc86b205a0e9
+      internalID: -364943570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 277
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c3de8f36f2a3f4091c2a0adabef8e5
+      internalID: 752739240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 225
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c6388a4679b77449c499b222fd71b6
+      internalID: -865053626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 225
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede951f5035f2dc4f9c4c6c000d204b9
+      internalID: -1341880723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 225
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17830513e82d9374b81825d1c05ac0dc
+      internalID: -874822816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 225
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d057021a51a06a548961db4ffea08c1f
+      internalID: -831215253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 173
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388fa0fd801ded54a875696dd9c70b0e
+      internalID: -677961912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 173
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec87b6abd9372141b982ba2dcd1906e
+      internalID: 558497244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_18
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 173
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0277b731c91f946ab78b7c371e9093
+      internalID: 1707805732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_19
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 173
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af15b3855286f2d46bd081385e3f1f58
+      internalID: 419001756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_20
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 121
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09e0ea46d1be72429d4334fae7507e1
+      internalID: -974129599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 121
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a145c74257972ae409e29d45a645e8c1
+      internalID: -370399483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_22
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 121
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb859ec7e4287f44b658c23de0d106d
+      internalID: 1415914565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_23
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 121
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362df0fde7e10454784a393e36455952
+      internalID: -166241703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_24
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 69
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d467bfa5721d94eac6437931d69dae
+      internalID: 1106933430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_25
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 69
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1bc73d86a6ded4e907f645c39292db
+      internalID: 1916668512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_26
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 69
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754a62d1f18150447a61f7abd5ba148d
+      internalID: 2138186554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_27
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 69
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33987e643b1fed647ae49f093b210967
+      internalID: 1386018660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_28
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 17
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a77ea89aaf54174f95d4e2c1211a86a
+      internalID: -633940860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_29
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 17
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fe1d77c25c7ae4cb207a10e7ebb6fa
+      internalID: -670681381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_30
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 17
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f636871c46f5a48a82350cd126f618
+      internalID: 441969229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Civilian1(black)_Attack_31
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 17
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64f308bf685bdd4794433211547f1c9
+      internalID: -1039484492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +804,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Civilian1(black)_Attack_0: 166714176
+      Civilian1(black)_Attack_1: 1077172628
+      Civilian1(black)_Attack_10: -364943570
+      Civilian1(black)_Attack_11: 752739240
+      Civilian1(black)_Attack_12: -865053626
+      Civilian1(black)_Attack_13: -1341880723
+      Civilian1(black)_Attack_14: -874822816
+      Civilian1(black)_Attack_15: -831215253
+      Civilian1(black)_Attack_16: -677961912
+      Civilian1(black)_Attack_17: 558497244
+      Civilian1(black)_Attack_18: 1707805732
+      Civilian1(black)_Attack_19: 419001756
+      Civilian1(black)_Attack_2: -602893830
+      Civilian1(black)_Attack_20: -974129599
+      Civilian1(black)_Attack_21: -370399483
+      Civilian1(black)_Attack_22: 1415914565
+      Civilian1(black)_Attack_23: -166241703
+      Civilian1(black)_Attack_24: 1106933430
+      Civilian1(black)_Attack_25: 1916668512
+      Civilian1(black)_Attack_26: 2138186554
+      Civilian1(black)_Attack_27: 1386018660
+      Civilian1(black)_Attack_28: -633940860
+      Civilian1(black)_Attack_29: -670681381
+      Civilian1(black)_Attack_3: -2061663383
+      Civilian1(black)_Attack_30: 441969229
+      Civilian1(black)_Attack_31: -1039484492
+      Civilian1(black)_Attack_4: 1632404641
+      Civilian1(black)_Attack_5: -1977177934
+      Civilian1(black)_Attack_6: 679095911
+      Civilian1(black)_Attack_7: 1206594446
+      Civilian1(black)_Attack_8: 726242539
+      Civilian1(black)_Attack_9: -2033236434
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
