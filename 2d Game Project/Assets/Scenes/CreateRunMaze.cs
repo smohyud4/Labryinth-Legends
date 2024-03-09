@@ -12,9 +12,8 @@ public class CreateRunMaze : MonoBehaviour
         // the order of the characters in a string does not matter
         // this is just an example of a 3x3 maze
         string[,] data = {
-            { "r", "lr", "ld"},
-            { "dr", "lr", "lu"},
-            { "ur", "lr", "l"}
+            { "r", "lr", "ld" },
+            { "", "r", "ul"}
         };
 
         md.StartRoom.x = 0;
