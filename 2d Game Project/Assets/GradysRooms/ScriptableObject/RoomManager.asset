@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68561bd4fa29d7d48985ed36e8c723aa, type: 3}
+  m_Name: RoomManager
+  m_EditorClassIdentifier: 
+  currentRoom: {x: 0, y: 0}
+  mazeData: {fileID: 11400000, guid: 8fd755a0a2dfb664287147bc1aaddd16, type: 2}
+  Rooms:
+  - GradysRooms/Scenes/Room1
+  - GradysRooms/Scenes/Room2
+  - GradysRooms/Scenes/Room3
+  - GradysRooms/Scenes/Room4
+  - GradysRooms/Scenes/Room5
+  - GradysRooms/Scenes/Room6
+  - GradysRooms/Scenes/Room7
+  - GradysRooms/Scenes/Room8
+  - GradysRooms/Scenes/Room9
+  - GradysRooms/Scenes/Room10
+  - GradysRooms/Scenes/Room11
+  - GradysRooms/Scenes/Room12
+  - GradysRooms/Scenes/Room13
+  - GradysRooms/Scenes/Room14
+  - GradysRooms/Scenes/Room15
