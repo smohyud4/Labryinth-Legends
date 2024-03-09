@@ -13,7 +13,8 @@ public class CreateRunMaze : MonoBehaviour
         // this is just an example of a 3x3 maze
         string[,] data = {
             { "r", "lr", "ld" },
-            { "", "r", "ul"}
+            { "rd", "lr", "ul"},
+            { "ur", "lr", "l" }
         };
 
         md.StartRoom.x = 0;
