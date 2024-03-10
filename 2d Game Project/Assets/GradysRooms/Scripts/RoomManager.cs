@@ -7,6 +7,7 @@ public class RoomManager : ScriptableObject
     public Vector2 currentRoom;
     public MazeData mazeData;
     public string[] Rooms;
+    public string lastDoor = "";
 
     string ParseName(string str) 
     {
@@ -86,6 +87,7 @@ public class RoomManager : ScriptableObject
 
     public void LoadNextRoom(string doorLoc)
     {
+        lastDoor = doorLoc;
         string nextRoomType = "";
 
         // get the next room type
