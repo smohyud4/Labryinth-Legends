@@ -12,21 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68561bd4fa29d7d48985ed36e8c723aa, type: 3}
   m_Name: RoomManager
   m_EditorClassIdentifier: 
-  currentRoom: {x: 0, y: 0}
+  currentRoom: {x: 0, y: 1}
   mazeData: {fileID: 11400000, guid: 8fd755a0a2dfb664287147bc1aaddd16, type: 2}
   Rooms:
-  - GradysRooms/Scenes/Room1
-  - GradysRooms/Scenes/Room2
-  - GradysRooms/Scenes/Room3
-  - GradysRooms/Scenes/Room4
-  - GradysRooms/Scenes/Room5
-  - GradysRooms/Scenes/Room6
-  - GradysRooms/Scenes/Room7
-  - GradysRooms/Scenes/Room8
-  - GradysRooms/Scenes/Room9
-  - GradysRooms/Scenes/Room10
-  - GradysRooms/Scenes/Room11
-  - GradysRooms/Scenes/Room12
-  - GradysRooms/Scenes/Room13
-  - GradysRooms/Scenes/Room14
-  - GradysRooms/Scenes/Room15
+  - GradysRooms/Scenes/u/0
+  - GradysRooms/Scenes/d/0
+  - GradysRooms/Scenes/l/0
+  - GradysRooms/Scenes/r/0
+  - GradysRooms/Scenes/ud/0
+  - GradysRooms/Scenes/ul/0
+  - GradysRooms/Scenes/ur/0
+  - GradysRooms/Scenes/dl/0
+  - GradysRooms/Scenes/dr/0
+  - GradysRooms/Scenes/lr/0
+  - GradysRooms/Scenes/udl/0
+  - GradysRooms/Scenes/udr/0
+  - GradysRooms/Scenes/ulr/0
+  - GradysRooms/Scenes/dlr/0
+  - GradysRooms/Scenes/udlr/0
+  lastDoor: d
