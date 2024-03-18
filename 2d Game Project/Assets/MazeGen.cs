@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine;
 
 public class MazeGenerator : MonoBehaviour
 {
+    public MazeData md;
+
     public class Cell
     {
         public int X { get; set; }
@@ -108,11 +111,52 @@ public class MazeGenerator : MonoBehaviour
         }
     }
 
+
+    public void LoadMaze()
+    {
+        // the order of the characters in a string does not matter
+        // this is just an example of a 3x3 maze
+        string[,] data = new string[Width, Height];
+
+        for (int x = 0; x < Width; x++)
+        {
+            for (int y = 0; y < Height; y++)
+            {
+                var cell = Grid[x, y];
+                if (x < Width - 1 && cell.Neighbors.Contains(Grid[x + 1, y]))
+                {
+                    data[x, y] += "r";
+                }
+                if (y < Height - 1 && cell.Neighbors.Contains(Grid[x, y + 1]))
+                {
+                    data[x, y] += "d";
+                }
+                if (x > 0 && cell.Neighbors.Contains(Grid[x - 1, y]))
+                {
+                    data[x, y] += "l";
+                }
+                if (y > 0 && cell.Neighbors.Contains(Grid[x, y - 1]))
+                {
+                    data[x, y] += "u";
+                }
+                Debug.Log(data[x, y]);
+            }
+
+        }
+
+        md.StartRoom.x = 0;
+        md.StartRoom.y = 0;
+        md.Data = data;
+
+        md.LoadMaze();
+    }
+
     void Start()
     {
         Width = 3;
         Height = 3;
         GenerateMaze();
         PrintCellDetails();
+        LoadMaze();
     }
 }
