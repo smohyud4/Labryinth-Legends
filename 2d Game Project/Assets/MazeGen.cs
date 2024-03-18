@@ -36,8 +36,8 @@ public class MazeGenerator : MonoBehaviour
     }
 
     public Cell[,] Grid { get; set; }
-    public int Width { get; set; }
-    public int Height { get; set; }
+    public int Width = 5;
+    public int Height = 5;
 
     public void GenerateMaze()
     {
@@ -125,20 +125,21 @@ public class MazeGenerator : MonoBehaviour
                 var cell = Grid[x, y];
                 if (x < Width - 1 && cell.Neighbors.Contains(Grid[x + 1, y]))
                 {
-                    data[x, y] += "r";
+                    data[x, y] += "d";
                 }
                 if (y < Height - 1 && cell.Neighbors.Contains(Grid[x, y + 1]))
                 {
-                    data[x, y] += "d";
+                    data[x, y] += "r";
                 }
                 if (x > 0 && cell.Neighbors.Contains(Grid[x - 1, y]))
                 {
-                    data[x, y] += "l";
+                    data[x, y] += "u";
                 }
                 if (y > 0 && cell.Neighbors.Contains(Grid[x, y - 1]))
                 {
-                    data[x, y] += "u";
+                    data[x, y] += "l";
                 }
+                Debug.Log(Grid[x, y].ToString());
                 Debug.Log(data[x, y]);
             }
 
@@ -153,10 +154,7 @@ public class MazeGenerator : MonoBehaviour
 
     void Start()
     {
-        Width = 3;
-        Height = 3;
         GenerateMaze();
-        PrintCellDetails();
         LoadMaze();
     }
 }
