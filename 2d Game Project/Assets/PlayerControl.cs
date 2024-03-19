@@ -33,9 +33,16 @@ public class PlayerControl : MonoBehaviour
             movementLast.x = movement.x;
             movementLast.y = movement.y;
         } 
+
+        if(Input.GetKeyDown(KeyCode.Space)){
+            Attack();
+        }
     }
 
     void FixedUpdate(){
         rb.MovePosition(rb.position+movement * Move_speed * Time.fixedDeltaTime);
+    }
+     void Attack(){
+        animator.SetTrigger("Attack");
     }
 }
