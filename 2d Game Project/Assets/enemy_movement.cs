@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class enemy_movement : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class enemy_movement : MonoBehaviour
     private Vector3 localScale;
     public float x;
     public float y;
+
+    private float attack = 5f;
+    private float attackSpeed = 1f;
+    private float canAttack = 0f;
 
 
     // Start is called before the first frame update
@@ -28,6 +33,21 @@ public class enemy_movement : MonoBehaviour
         MoveEnemy();
     }
 
+    private void OnCollisionStay2D(Collision2D collision){
+        if (collision.gameObject.tag == "Player"){
+            if(attackSpeed <= canAttack){
+                collision.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attack);
+                Attack();
+                canAttack = 0f;
+            } else {
+                canAttack += Time.deltaTime;
+            }
+            // Debug.Log("Player hit");     
+            // PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            // playerHealth.UpdateHealth(-1);
+        }
+    }       
+
     private void MoveEnemy(){
         directionToPlayer = player.position - transform.position;
         if (Vector3.Distance(player.position, transform.position) > 1.0f){
@@ -43,10 +63,9 @@ public class enemy_movement : MonoBehaviour
         animator.SetFloat("Horizontal", transform.position.x);
         animator.SetFloat("Vertical", transform.position.y);
         animator.SetFloat("Speed", transform.position.sqrMagnitude);
+    }
 
-
-        // if(Input.GetKeyDown(KeyCode.Space)){
-        //     Attack();
-        // }
+    private void Attack(){
+        animator.SetTrigger("Attack");
     }
 }

@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a718d1dad01f71b4a8621717182ea2ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 427510189}
   player: {fileID: 1139197574}
   speed: 0
   x: 0
@@ -1932,6 +1932,7 @@ GameObject:
   - component: {fileID: 1139197576}
   - component: {fileID: 1139197578}
   - component: {fileID: 1139197579}
+  - component: {fileID: 1139197580}
   m_Layer: 0
   m_Name: Civilian1(black)_Idle_0
   m_TagString: Player
@@ -2005,7 +2006,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5212813}
-  - {fileID: 1433581357}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1139197576
@@ -2023,7 +2023,6 @@ MonoBehaviour:
   Move_speed: 5
   rb: {fileID: 1139197577}
   animator: {fileID: 1139197578}
-  attackPoint: {fileID: 0}
   attackRange: 0.5
   enemyLayers:
     serializedVersion: 2
@@ -2121,37 +2120,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11, y: 0.07347775}
   m_EdgeRadius: 0
---- !u!1 &1433581356
-GameObject:
+--- !u!114 &1139197580
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1433581357}
-  m_Layer: 0
-  m_Name: AttackPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1433581357
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433581356}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.023, y: -0.056, z: 0}
-  m_LocalScale: {x: 0.23632, y: 0.23632, z: 0.23632}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1139197574}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1139197572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 772b79deed73ca84a90309dea23cd8b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
