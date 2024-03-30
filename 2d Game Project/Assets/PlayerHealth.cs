@@ -43,8 +43,6 @@ public class PlayerHealth : MonoBehaviour
         }
         if (playerData.health <= 0){
             playerData.health = 0f;
-            Time.timeScale = 0f; //pauses the game for now to show health is done
-            Debug.Log("Game Over!"); 
         }
 
         healthBar.SetHealth(playerData.health);

@@ -13,7 +13,7 @@ public class enemy_movement : MonoBehaviour
     private Vector3 localScale;
     public float x;
     public float y;
-
+    public float moveSpeed = 3f;
     private float attack = 5f;
     private float attackSpeed = 5f;
     private float canAttack = 0f;

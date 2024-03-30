@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 2083085934100988562}
-  player: {fileID: 0}
+  player: {fileID: 5582139986498539659, guid: f3ef0f34ab4d7fb47ac78729306d678d, type: 3}
   speed: 0
   x: 0
   y: 0
