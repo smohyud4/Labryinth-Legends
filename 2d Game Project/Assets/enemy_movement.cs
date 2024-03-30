@@ -18,7 +18,6 @@ public class enemy_movement : MonoBehaviour
     private float attackSpeed = 1f;
     private float canAttack = 0f;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -26,25 +25,28 @@ public class enemy_movement : MonoBehaviour
         speed = 3f;
         localScale = transform.localScale;
     }
-
     // Update is called once per frame
+    Collider2D collision;
     private void FixedUpdate()
     {
+         x= transform.position.x;
+        y= transform.position.y;
         MoveEnemy();
+
     }
 
     private void OnCollisionStay2D(Collision2D collision){
         if (collision.gameObject.tag == "Player"){
             if(attackSpeed <= canAttack){
                 collision.gameObject.GetComponent<PlayerHealth>().UpdateHealth(-attack);
+                animator.SetFloat("Horizontal", x);
+                animator.SetFloat("Vertical", y);
+                animator.SetFloat("Speed", 0);
                 Attack();
                 canAttack = 0f;
             } else {
                 canAttack += Time.deltaTime;
             }
-            // Debug.Log("Player hit");     
-            // PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            // playerHealth.UpdateHealth(-1);
         }
     }       
 
@@ -53,6 +55,11 @@ public class enemy_movement : MonoBehaviour
         if (Vector3.Distance(player.position, transform.position) > 1.0f){
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
+        // else{
+        //     animator.SetFloat("Horizontal", x);
+        //     animator.SetFloat("Vertical", y);
+        //     animator.SetFloat("Speed", 0);
+        // }
         if (directionToPlayer.x > 0){
             localScale.x = -1;
         } else if (directionToPlayer.x < 0){
@@ -63,6 +70,7 @@ public class enemy_movement : MonoBehaviour
         animator.SetFloat("Horizontal", transform.position.x);
         animator.SetFloat("Vertical", transform.position.y);
         animator.SetFloat("Speed", transform.position.sqrMagnitude);
+
     }
 
     private void Attack(){
