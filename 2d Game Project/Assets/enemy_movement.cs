@@ -15,7 +15,7 @@ public class enemy_movement : MonoBehaviour
     public float y;
 
     private float attack = 5f;
-    private float attackSpeed = 1f;
+    private float attackSpeed = 5f;
     private float canAttack = 0f;
 
     // Start is called before the first frame update
@@ -55,11 +55,11 @@ public class enemy_movement : MonoBehaviour
         if (Vector3.Distance(player.position, transform.position) > 1.0f){
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
-        // else{
-        //     animator.SetFloat("Horizontal", x);
-        //     animator.SetFloat("Vertical", y);
-        //     animator.SetFloat("Speed", 0);
-        // }
+        else{
+            animator.SetFloat("Horizontal", x);
+            animator.SetFloat("Vertical", y);
+            animator.SetFloat("Speed", 0);
+        }
         if (directionToPlayer.x > 0){
             localScale.x = -1;
         } else if (directionToPlayer.x < 0){

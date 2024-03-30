@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public float Move_speed = 5;
+    public PlayerData playerData;
+    public float Move_speed;
     Vector2 movement;
     Vector2 movementLast;
     public Rigidbody2D rb;
     public Animator animator;
     public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Move_speed = playerData.move_speed; //not sure if this is actually changing values.
     }
 
     // Update is called once per frame
