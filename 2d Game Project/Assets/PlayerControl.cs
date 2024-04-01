@@ -13,6 +13,8 @@ public class PlayerControl : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
+    //public int CurrentWeaponNo = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +43,32 @@ public class PlayerControl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)){
             Attack();
         }
+        
+        /*if(Input.GetKeyDown(KeyCode.C)){
+            ChangeWeapon();
+        }
+
+        if(CurrentWeaponNo == 1){
+            Move_speed = 10;
+        }
+        if(CurrentWeaponNo == 0){
+            Move_speed = 5;
+        }*/
     }
+
+    /*void ChangeWeapon(){
+        if(CurrentWeaponNo == 0){
+            CurrentWeaponNo++;
+            animator.SetLayerWeight(CurrentWeaponNo-1, 0);
+            animator.SetLayerWeight(CurrentWeaponNo, 1);
+        }
+        else{
+            CurrentWeaponNo--;
+            animator.SetLayerWeight(CurrentWeaponNo+1, 0);
+            animator.SetLayerWeight(CurrentWeaponNo, 1);
+        }
+    }*/
+
 
     void FixedUpdate(){
         rb.MovePosition(rb.position+movement * Move_speed * Time.fixedDeltaTime);
