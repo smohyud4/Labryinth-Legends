@@ -2,28 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControl : MonoBehaviour
+public class T_PlayerControl : MonoBehaviour
 {
-    public PlayerData playerData;
-    public float Move_speed;
+
+     public float Move_speed = 5;
     Vector2 movement;
     Vector2 movementLast;
     public Rigidbody2D rb;
     public Animator animator;
+    public Transform attackPoint;
     public float attackRange = 0.5f;
-
-    //public int CurrentWeaponNo = 0;
-
+    public LayerMask enemyLayers;
+    public int CurrentWeaponNo = 0;
     // Start is called before the first frame update
     void Start()
     {
-        Move_speed = playerData.move_speed; //not sure if this is actually changing values.
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
+          movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
@@ -43,19 +43,19 @@ public class PlayerControl : MonoBehaviour
             Attack();
         }
         
-        /*if(Input.GetKeyDown(KeyCode.C)){
+        if(Input.GetKeyDown(KeyCode.C)){
             ChangeWeapon();
         }
 
         if(CurrentWeaponNo == 1){
-            Move_speed = 10;
+            Move_speed = 8;
         }
         if(CurrentWeaponNo == 0){
             Move_speed = 5;
-        }*/
+        }
     }
 
-    /*void ChangeWeapon(){
+     void ChangeWeapon(){
         if(CurrentWeaponNo == 0){
             CurrentWeaponNo++;
             animator.SetLayerWeight(CurrentWeaponNo-1, 0);
@@ -66,14 +66,24 @@ public class PlayerControl : MonoBehaviour
             animator.SetLayerWeight(CurrentWeaponNo+1, 0);
             animator.SetLayerWeight(CurrentWeaponNo, 1);
         }
-    }*/
-
+    }
 
     void FixedUpdate(){
         rb.MovePosition(rb.position+movement * Move_speed * Time.fixedDeltaTime);
     }
      void Attack(){
         animator.SetTrigger("Attack");
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        foreach(Collider2D enemy in hitEnemies){
+            Debug.Log("We hit " + enemy.name);
+        }
+    }
+
+    void OnDrawGizmosSelected(){
+        if(attackPoint == null){
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
 }
