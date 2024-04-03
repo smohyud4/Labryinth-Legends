@@ -24,10 +24,11 @@ public class MazeGen2 : MonoBehaviour
         // Start from a random cell
         var startCell = new Vector2Int(Random.Range(0, MazeSize), Random.Range(0, MazeSize));
 
-        // md.StartRoom.x = startCell.y;
-        // md.StartRoom.y = startCell.x;
-        md.StartRoom.x = 0;
-        md.StartRoom.y = 0;
+        md.StartRoom.x = startCell.y;
+        md.StartRoom.y = startCell.x;
+
+        Debug.Log($"Start cell: ({startCell.x}, {startCell.y})");
+
 
         maze[startCell.x, startCell.y] = 0;
 
