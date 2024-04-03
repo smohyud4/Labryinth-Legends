@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
-    public float Move_speed = 5;
+    public PlayerData playerData;
+    public float Move_speed;
     Vector2 movement;
     Vector2 movementLast;
     public Rigidbody2D rb;
     public Animator animator;
-    public Transform attackPoint;
     public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
 
     //public int CurrentWeaponNo = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Move_speed = playerData.move_speed; //not sure if this is actually changing values.
     }
 
     // Update is called once per frame
@@ -75,16 +74,6 @@ public class PlayerControl : MonoBehaviour
     }
      void Attack(){
         animator.SetTrigger("Attack");
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-        foreach(Collider2D enemy in hitEnemies){
-            Debug.Log("We hit " + enemy.name);
-        }
     }
 
-    void OnDrawGizmosSelected(){
-        if(attackPoint == null){
-            return;
-        }
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
 }
