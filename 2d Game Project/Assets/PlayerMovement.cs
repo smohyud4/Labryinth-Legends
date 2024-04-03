@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/*
 public class PlayerMovement : MonoBehaviour
 {
     public float Move_speed = 5;
@@ -62,8 +62,9 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }
+*/
 
-/*
+
 public class PlayerMovement : MonoBehaviour
 {
      
@@ -72,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
      public Animator animator;
 
      Vector2 movement;
-     Vector2 movementLast;
+     //Vector2 movementLast;
 
     // Update is called once per frame
     void Update()
@@ -95,4 +96,4 @@ public class PlayerMovement : MonoBehaviour
     }
 
 }
-*/
+
