@@ -37,7 +37,6 @@ public class PlayerHealth : MonoBehaviour
         /* Using a scriptable object will make it easier to transfer data between scenes.
         */
         playerData.health += mod;
-        Console.WriteLine(playerData.health);
         if (playerData.health > playerData.maxHealth){
             playerData.health = playerData.maxHealth;
         }
@@ -46,16 +45,6 @@ public class PlayerHealth : MonoBehaviour
         }
 
         healthBar.SetHealth(playerData.health);
-
-
-        // health += mod;
-        // if (health > maxHealth){
-        //     health = maxHealth;
-        // }
-        // if (health <= 0){
-        //     health = 0f;
-        //     // Die();
-        // }
 
         // healthBar.SetHealth(health);
     }
