@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class T_PlayerControl : MonoBehaviour
 {
-
+    // 192, 216, C82626, 64
      public float Move_speed = 5;
     Vector2 movement;
     Vector2 movementLast;
