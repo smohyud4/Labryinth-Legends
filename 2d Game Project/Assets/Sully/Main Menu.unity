@@ -674,10 +674,10 @@ MonoBehaviour:
       - m_Target: {fileID: 2046398447}
         m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
         m_MethodName: buttonClick
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 6dce0f9d6f9c63a48a97e9d125e86228, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2746,10 +2746,10 @@ MonoBehaviour:
       - m_Target: {fileID: 2046398447}
         m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
         m_MethodName: buttonClick
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 6dce0f9d6f9c63a48a97e9d125e86228, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3440,7 +3440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundEff: {fileID: 1627207235}
-  button_click: {fileID: 8300000, guid: 6dce0f9d6f9c63a48a97e9d125e86228, type: 3}
 --- !u!1 &2081245646
 GameObject:
   m_ObjectHideFlags: 0
