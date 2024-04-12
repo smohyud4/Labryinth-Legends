@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class SoundEffects : MonoBehaviour
 {
     public AudioSource SoundEff;
-    public AudioClip button_click;
+    //public AudioClip button_click;
 
-    public void buttonClick()
+    public void buttonClick(AudioClip clip)
     {
-        SoundEff.clip = button_click;
+        SoundEff.clip = clip;
         SoundEff.Play();
     }
 

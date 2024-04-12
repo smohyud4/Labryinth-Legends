@@ -674,10 +674,10 @@ MonoBehaviour:
       - m_Target: {fileID: 2046398447}
         m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
         m_MethodName: buttonClick
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 6dce0f9d6f9c63a48a97e9d125e86228, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1892,7 +1892,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dfjl
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -2746,10 +2746,10 @@ MonoBehaviour:
       - m_Target: {fileID: 2046398447}
         m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
         m_MethodName: buttonClick
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8300000, guid: 6dce0f9d6f9c63a48a97e9d125e86228, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3073,6 +3073,7 @@ GameObject:
   - component: {fileID: 1909177325}
   - component: {fileID: 1909177324}
   - component: {fileID: 1909177323}
+  - component: {fileID: 1909177326}
   m_Layer: 5
   m_Name: Settings Menu
   m_TagString: Untagged
@@ -3187,6 +3188,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909177321}
   m_CullTransparentMesh: 1
+--- !u!114 &1909177326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909177321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.044025064, g: 0.043332845, b: 0.043332845, a: 0.5}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2036798533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3424,7 +3440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundEff: {fileID: 1627207235}
-  button_click: {fileID: 8300000, guid: 6dce0f9d6f9c63a48a97e9d125e86228, type: 3}
 --- !u!1 &2081245646
 GameObject:
   m_ObjectHideFlags: 0
