@@ -7,7 +7,6 @@ public class SoundEffects : MonoBehaviour
 {
     public AudioSource SoundEff;
     //public AudioClip button_click;
-
     public void buttonClick(AudioClip clip)
     {
         SoundEff.clip = clip;

@@ -7,6 +7,7 @@ public class Scenes : MonoBehaviour
     // Start is called before the first frame update
     public void loadMainMenu(string sceneName)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }
 }
