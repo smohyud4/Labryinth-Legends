@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseController : MonoBehaviour
 {
-    
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
@@ -32,12 +31,14 @@ public class PauseController : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        FindObjectOfType<AudioManger>().Play("Button Click");
     }
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        FindObjectOfType<AudioManger>().Play("Button Click");
     }
  
 }
