@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31b1254a2055154993e77bbd58312b5, type: 3}
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
-  Items: 000000000300000000000000000000000300000002000000000000000000000002000000030000000200000000000000030000000000000002000000030000000300000002000000030000000300000002000000000000000000000003000000020000000300000000000000000000000200000003000000
+  Items: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
   Armor: 00000000000000000000000000000000
   Weapons: 
   Tools: 
+  health: 80

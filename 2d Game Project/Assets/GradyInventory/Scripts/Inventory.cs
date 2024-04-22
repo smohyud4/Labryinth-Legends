@@ -13,4 +13,6 @@ public class Inventory : ScriptableObject
     public int[] Weapons;
 
     public int[] Tools;
+
+    public int health;
 }

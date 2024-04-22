@@ -17,6 +17,10 @@ public class InventoryManager : MonoBehaviour
     void Start()
     {
         overlay = GameObject.FindGameObjectWithTag("InventoryOverlay");
+        for (int i = 0; i < tiles.Length; i++) 
+        {
+            tiles[i] = overlay.transform.GetChild(i).gameObject;
+        }
         canvas = GameObject.Find("Canvas").gameObject.GetComponent<Canvas>();
         overlay.SetActive(false);
 
@@ -41,7 +45,14 @@ public class InventoryManager : MonoBehaviour
             if (isOpen) LoadInventory();
             else DestroyInventory();
         }
+        else if (Input.GetKeyDown(KeyCode.X)) {
+            inventory.health -= 5;
+        }
+        else if (Input.GetKeyDown(KeyCode.R)) {
+            inventory.health = 100;
+        }
     }
+
 
     public void RefreshInventory()
     {
