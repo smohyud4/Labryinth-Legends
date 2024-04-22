@@ -18,7 +18,6 @@ public class InventoryManager : MonoBehaviour
     {
         overlay = GameObject.FindGameObjectWithTag("InventoryOverlay");
         canvas = GameObject.Find("Canvas").gameObject.GetComponent<Canvas>();
-        //overlay.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, canvas.GetComponent<RectTransform>().sizeDelta.x);
         overlay.SetActive(false);
 
 
