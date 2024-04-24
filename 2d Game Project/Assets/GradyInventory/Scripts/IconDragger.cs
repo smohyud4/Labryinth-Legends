@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -22,11 +23,13 @@ public class IconDragger : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = gameObject.transform.parent.gameObject.GetComponent<Canvas>();
+        Debug.Log("inited");
         started = false;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Debug.Log("Picked icon item up");
         canvasGroup.alpha = 0.5f;
         canvasGroup.blocksRaycasts = false;
     }
@@ -63,6 +66,7 @@ public class IconDragger : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
 
     public void OnTriggerEnter2D(Collider2D coll) 
     {
+        Debug.Log("triggered");
         if (started == false) {
             startId = coll.gameObject.GetComponent<TileDragger>().id;
             started = true;
