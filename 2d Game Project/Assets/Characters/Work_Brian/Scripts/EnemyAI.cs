@@ -25,7 +25,7 @@ public class EnemyAI : MonoBehaviour
     private int attack = 1;
     private float attackSpeed = 5f;
     private float canAttack = 2f;
-    private float attackRange = 1.5f;
+    private float attackRange = 1.75f;
     void Start()
     {
         seeker = GetComponent<Seeker>();
@@ -87,8 +87,6 @@ public class EnemyAI : MonoBehaviour
             //     Debug.Log("Player Health: " + mplayer_health.health);
             // }
             Attack();
-            mplayer_health.health -= attack;
-            Debug.Log("Player Health: " + mplayer_health.health);
             
         }
     }
@@ -100,6 +98,8 @@ public class EnemyAI : MonoBehaviour
         animator.SetFloat("Speed", 0);
         rb.velocity = Vector2.zero; // Stop the enemy from moving while attacking
         animator.SetTrigger("Attack");
+        mplayer_health.health -= attack;
+        Debug.Log("Player Health: " + mplayer_health.health);
     }
 
 
