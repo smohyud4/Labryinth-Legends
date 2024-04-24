@@ -121,7 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e25ce3a82d77764184d9dd85316eb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 6409895106741419702, guid: 2e0c262a06bc5fb44868de1efbe9d9db, type: 3}
+  target: {fileID: 0}
+  mplayer_health: {fileID: 11400000, guid: f122cc0eafa78074e815636462cbcdc7, type: 2}
   speed: 400
   nextWaypointDistance: 3
   animator: {fileID: 8960558284945305149}

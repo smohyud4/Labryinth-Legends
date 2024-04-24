@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform target;
+    public Inventory mplayer_health;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
 
@@ -21,9 +22,9 @@ public class EnemyAI : MonoBehaviour
 
     Seeker seeker;
     Rigidbody2D rb;
-    private float attack = 5f;
+    private int attack = 1;
     private float attackSpeed = 5f;
-    private float canAttack = 5f;
+    private float canAttack = 2f;
     private float attackRange = 1.5f;
     void Start()
     {
@@ -78,9 +79,16 @@ public class EnemyAI : MonoBehaviour
         float distanceToPlayer = Vector2.Distance(rb.position, target.position);
         if (distanceToPlayer <= attackRange)
         {
+            // if (Time.time >= canAttack)
+            // {
+            //     canAttack = Time.time + attackSpeed;
+            //     Attack();
+            //     mplayer_health.health -= attack;
+            //     Debug.Log("Player Health: " + mplayer_health.health);
+            // }
             Attack();
-            //TODO: TPlayer needs the health script to be useable
-            // target.GetComponent<PlayerHealth>().UpdateHealth(-attack);
+            mplayer_health.health -= attack;
+            Debug.Log("Player Health: " + mplayer_health.health);
             
         }
     }
