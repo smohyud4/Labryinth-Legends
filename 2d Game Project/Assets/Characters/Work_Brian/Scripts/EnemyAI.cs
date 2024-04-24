@@ -29,6 +29,7 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        target = GameObject.Find("MainPlayer").transform;
 
         InvokeRepeating("UpdatePath", 0f, .5f);
         animator = graphics.GetComponent<Animator>();

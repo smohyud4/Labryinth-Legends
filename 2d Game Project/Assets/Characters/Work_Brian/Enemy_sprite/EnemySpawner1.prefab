@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5da565497609454e924a9c0a398d5a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swarmerPrefab: {fileID: 0}
+  swarmerPrefab: {fileID: 2695552135615125522, guid: c8b470177fec45e4f8c699a0e34a17d6, type: 3}
   swarmerInterval: 1
   maxSpawns: 5
