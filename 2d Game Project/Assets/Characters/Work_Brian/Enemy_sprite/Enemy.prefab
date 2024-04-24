@@ -121,7 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e25ce3a82d77764184d9dd85316eb0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 8934478093661986570, guid: 2e0c262a06bc5fb44868de1efbe9d9db, type: 3}
+  target_transform: {fileID: 0}
   speed: 400
   nextWaypointDistance: 3
   animator: {fileID: 8960558284945305149}
@@ -235,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80a478490e68609489f2c66bed4362ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
 --- !u!95 &8960558284945305149 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2083085934100988562, guid: 7bdf2c94ece6c94418c6b3f8dfda39a1, type: 3}

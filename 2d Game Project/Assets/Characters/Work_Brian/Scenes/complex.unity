@@ -20065,10 +20065,6 @@ PrefabInstance:
       propertyPath: swarmerPrefab
       value: 
       objectReference: {fileID: 808354447}
-    - target: {fileID: 236976720447066140, guid: 2c1c4af7635a13e40bd86f43dec0ce84, type: 3}
-      propertyPath: swarmerInterval
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1278125513534132255, guid: 2c1c4af7635a13e40bd86f43dec0ce84, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4
