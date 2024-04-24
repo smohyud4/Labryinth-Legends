@@ -53,7 +53,7 @@ public class IconDragger : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
             inventory.Items[tileId] = tmp;
         } 
         else {
-            Vector3 offset = new Vector3(0, -1, 0);
+            Vector3 offset = new Vector3(0, (float)-1.5, 0);
             Instantiate(itemManager.itemPrefab[inventory.Items[startId]], GameObject.FindGameObjectWithTag("Player").gameObject.transform.position + offset, Quaternion.identity);
             inventory.Items[startId] = -1;
             Destroy(gameObject);
@@ -66,7 +66,6 @@ public class IconDragger : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
 
     public void OnTriggerEnter2D(Collider2D coll) 
     {
-        Debug.Log("triggered");
         if (started == false) {
             startId = coll.gameObject.GetComponent<TileDragger>().id;
             started = true;
