@@ -8,6 +8,7 @@ public class HealthBar : MonoBehaviour
 	public Slider slider;
 	public Gradient gradient;
 	public Image fill;
+	public Inventory inventory;
 
 	public void SetMaxHealth(float health)
 	{
@@ -20,6 +21,17 @@ public class HealthBar : MonoBehaviour
 	{
 		slider.value = health;
 		fill.color = gradient.Evaluate(slider.normalizedValue);
+	}
+
+    public void Start()
+	{
+		SetMaxHealth(100);
+		SetHealth(inventory.health);
+	}
+
+	public void Update()
+	{
+		SetHealth(inventory.health);
 	}
 
 }
