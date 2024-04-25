@@ -47,27 +47,19 @@ MonoBehaviour:
   sounds:
   - clip: {fileID: 8300000, guid: 6dce0f9d6f9c63a48a97e9d125e86228, type: 3}
     name: Button Click
-    volume: 0
-    pitch: 0
     loop: 0
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 70041311c3ec25a48826ce190451a2c8, type: 3}
     name: Foot Step
-    volume: 0
-    pitch: 1.81
     loop: 0
     source: {fileID: 0}
   - clip: {fileID: 8300000, guid: 4ebf4164fed567e4597a3f6156a23358, type: 3}
     name: Sword Swing
-    volume: 0
-    pitch: 0.83
     loop: 0
     source: {fileID: 0}
   theme:
     clip: {fileID: 8300000, guid: f7a7385ced8b65744be9f6732b79352b, type: 3}
     name: Main Dungeon Theme
-    volume: 0
-    pitch: 0
     loop: 1
     source: {fileID: 0}
   mainMenu: 0

@@ -58,6 +58,6 @@ public class AudioManger : MonoBehaviour
         }
 
         s.source.Play();
-        Debug.LogWarning("Sound: " + name + " played!");
+        //Debug.LogWarning("Sound: " + name + " played!");
     }
 }

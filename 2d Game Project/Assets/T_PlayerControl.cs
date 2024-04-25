@@ -14,17 +14,19 @@ public class T_PlayerControl : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     public int CurrentWeaponNo = 0;
+    public static bool isWalking = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        //attackPoint = transform.Find("AttackPoint");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         if (PauseController.GameIsPaused) return;
-        
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         animator.SetFloat("Horizontal", movement.x);
@@ -40,7 +42,10 @@ public class T_PlayerControl : MonoBehaviour
         if (movement.x != 0 || movement.y != 0){
             movementLast.x = movement.x;
             movementLast.y = movement.y;
-            //FindObjectOfType<AudioManger>().Play("Foot Step");
+            isWalking = true;
+        }
+        else{
+            isWalking = false;
         } 
 
         if(Input.GetKeyDown(KeyCode.Space)){
