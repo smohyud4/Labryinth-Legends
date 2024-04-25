@@ -10,6 +10,7 @@ public class PauseController : MonoBehaviour
 
     void Start()
     {
+        GameIsPaused = false;
         pauseMenuUI.SetActive(false);
     }
     void Update()
