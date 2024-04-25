@@ -6,14 +6,34 @@ public class AudioManger : MonoBehaviour
 {
     public Sound[] sounds;    
     public Sound theme;
+    public static AudioManger instance;
+    public bool mainMenu = false;
    
     void Awake()
     {
+        if (!mainMenu)
+        {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            DontDestroyOnLoad(gameObject);
+        }
+
         foreach (Sound s in sounds)
         {
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.loop = s.loop;
+            //s.source.volume = 0.5f;
+            //s.source.pitch = 1f;
+            if (s.name == "Sword Swing") s.source.volume = 0.2f;
         }
     }
     void Start()
@@ -36,7 +56,8 @@ public class AudioManger : MonoBehaviour
             Debug.LogWarning("Sound: " + name + " not found!");
             return;
         }
+
         s.source.Play();
-        //Debug.LogWarning("Sound: " + name + " played!");
+        Debug.LogWarning("Sound: " + name + " played!");
     }
 }

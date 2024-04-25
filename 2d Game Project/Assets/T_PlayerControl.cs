@@ -17,13 +17,15 @@ public class T_PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //attackPoint = transform.Find("AttackPoint");
     }
 
     // Update is called once per frame
     void Update()
     {
-          movement.x = Input.GetAxisRaw("Horizontal");
+        if (PauseController.GameIsPaused) return;
+        
+        movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
@@ -32,15 +34,18 @@ public class T_PlayerControl : MonoBehaviour
         if (movement.x == 0 && movement.y == 0) {
           animator.SetFloat("Horizontal", movementLast.x);
           animator.SetFloat("Vertical", movementLast.y);
+          
          } 
  
         if (movement.x != 0 || movement.y != 0){
             movementLast.x = movement.x;
             movementLast.y = movement.y;
+            //FindObjectOfType<AudioManger>().Play("Foot Step");
         } 
 
         if(Input.GetKeyDown(KeyCode.Space)){
             Attack();
+            FindObjectOfType<AudioManger>().Play("Sword Swing");
         }
         
         if(Input.GetKeyDown(KeyCode.C)){

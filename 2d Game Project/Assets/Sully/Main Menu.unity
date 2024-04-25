@@ -2332,6 +2332,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: mainMenu
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
       propertyPath: theme.clip
       value: 
       objectReference: {fileID: 8300000, guid: 51f3806f45ebba24a95a91b6ea495fdd, type: 3}
