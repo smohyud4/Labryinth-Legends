@@ -58,10 +58,10 @@ The Unity Engine will be the primary technology that we use due to the robust am
         * Bhumir was in charge of creating a different maze each time it loaded up so that no maze was the same. Additionally, he created the playable rooms.
     * Brian: Enemy Creation and Attack
         * Brian was in charge of creating the enemy animations, and attacks. Furthermore, he created a script that would target the player if he got close.
-    * Tanner: Player Creation and Movement
-        * Tanner was in charge of creating the main player. He was able to accomplish the animation, attack, and different actions for different buttons. For example, he was able to toggle if the player had a sword and shield if "C" was pressed, this allowed the player to move faster or slower depending on the toggle.
     * Sully: Music and UI
         * Sully was in charge of the music that would be played on the main menu and during gameplay. Additionally, he was in charge of creating different menus such as the main menu and pause menu. Finally, he also created the health bar UI for the player and the final boss.
+    * Tanner: Player Creation and Movement
+        * Tanner was in charge of creating the main player. He was able to accomplish the animation, attack, and different actions for different buttons. For example, he was able to toggle if the player had a sword and shield if "C" was pressed, this allowed the player to move faster or slower depending on the toggle.
     * Role Changes:
         * While these roles were pretty much static, we did change to help out each other if they needed something first to be built. 
 
