@@ -46,7 +46,8 @@ The Unity Engine will be the primary technology that we use due to the robust am
 
 * Final-Boss Room:
 
-    [Screenshot]
+    ![image](./pictures/boss.png)
+
 
 ### Section 4: Team
 * Skills
