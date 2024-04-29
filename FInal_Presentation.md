@@ -38,15 +38,19 @@ The Unity Engine will be the primary technology that we use due to the robust am
 
 * Maze:
 
-    [Screenshot]
+    ![image](./pictures/Maze.png)
 
 * Enemy:
 
-    [Screenshot]
+    ![image](./pictures/Enemy.png)
 
 * Final-Boss Room:
 
-    ![image](./pictures/boss.png)
+    ![image](./pictures/Boss.png)
+
+* Hero:
+
+    ![image](./pictures/Hero.png)
 
 
 ### Section 4: Team
