@@ -1,7 +1,5 @@
 # Name: Labyrinthian Legends: Quest for the Lost Chambers
 
-## Team Name: Dungeon Dawgs
-
 ## Team Members: Bhumir Patel, Brian Merino, James Shastid, David Wilkey, Sulaiman Mohyuddin
 
 ### Section 1: Introduction
