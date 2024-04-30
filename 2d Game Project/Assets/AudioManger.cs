@@ -33,7 +33,7 @@ public class AudioManger : MonoBehaviour
             s.source.loop = s.loop;
             //s.source.volume = 0.5f;
             //s.source.pitch = 1f;
-            if (s.name == "Sword Swing") s.source.volume = 0.2f;
+            if (s.name == "Sword Swing") s.source.volume = 0.1f;
         }
     }
     void Start()

@@ -13,13 +13,13 @@ public class T_PlayerControl : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
-    public int CurrentWeaponNo = 0;
+    public int CurrentWeaponNo;
     public static bool isWalking = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        CurrentWeaponNo = 0;
     }
 
     // Update is called once per frame
@@ -48,7 +48,7 @@ public class T_PlayerControl : MonoBehaviour
             isWalking = false;
         } 
 
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)){
             Attack();
             FindObjectOfType<AudioManger>().Play("Sword Swing");
         }

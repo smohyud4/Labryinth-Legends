@@ -10,6 +10,7 @@ public class PlayerHealthBar : MonoBehaviour
     // [SerializeField ]private float health = 100f;
     // [SerializeField] private float maxHealth = 100f;
     public HealthBar healthBar;
+    
 
     // Start is called before the first frame update
     void Start()
