@@ -8,10 +8,11 @@ public class AudioManger : MonoBehaviour
     public Sound theme;
     public static AudioManger instance;
     public bool mainMenu = false;
+    public bool bossroom = false;
    
     void Awake()
     {
-        if (!mainMenu)
+        if (!mainMenu && !bossroom)
         {
             if (instance == null)
             {
@@ -24,6 +25,10 @@ public class AudioManger : MonoBehaviour
             }
 
             DontDestroyOnLoad(gameObject);
+        }
+
+        if (bossroom) {
+            return;
         }
 
         foreach (Sound s in sounds)

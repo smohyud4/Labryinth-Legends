@@ -6,6 +6,8 @@ public class Lad : MonoBehaviour
 {
     public GameObject player;
     public Transform upDoor, downDoor, leftDoor, rightDoor;
+    public GameObject key;
+
     public RoomManager rm;
 
     // Start is called before the first frame update
@@ -22,6 +24,11 @@ public class Lad : MonoBehaviour
         }
         else if (rm.lastDoor == "r") {
             player.transform.position = leftDoor.position;
+        }
+
+        if (rm.mazeData.Data[(int)rm.currentRoom.y, (int)rm.currentRoom.x].Contains("K")) {
+            Debug.Log("Placing Key");
+            Instantiate(key, Vector3.zero, Quaternion.identity);
         }
     }
 }

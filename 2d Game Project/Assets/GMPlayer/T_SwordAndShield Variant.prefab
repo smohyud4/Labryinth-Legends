@@ -319,4 +319,4 @@ MonoBehaviour:
   - {fileID: 0}
   inventory: {fileID: 11400000, guid: f122cc0eafa78074e815636462cbcdc7, type: 2}
   itemManager: {fileID: 11400000, guid: 8a720a8f6288c99468787d9ac5895a64, type: 2}
-  ClearInventory: 1
+  ClearInventory: 0

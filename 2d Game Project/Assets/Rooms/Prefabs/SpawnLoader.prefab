@@ -146,6 +146,7 @@ MonoBehaviour:
   downDoor: {fileID: 7847022592205337226}
   leftDoor: {fileID: 3067963969701866760}
   rightDoor: {fileID: 6839025270409990471}
+  key: {fileID: 2604705131300095723, guid: e6f57153e9811944c9059220cce30d93, type: 3}
   rm: {fileID: 11400000, guid: 0c699606d9416f245ba44e4ff0c7097a, type: 2}
 --- !u!1 &8657619965476604070
 GameObject:

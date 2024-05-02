@@ -18,6 +18,7 @@ public class MazeGen2 : MonoBehaviour
             for (int j = 0; j < MazeSize; j++)
             {
                 maze[i, j] = 1;
+                data[i, j] = "";
             }
         }
 
@@ -99,6 +100,24 @@ public class MazeGen2 : MonoBehaviour
             }
         }
 
+        int count = 3;
+        while (count != 0) 
+        {
+            int rx = Random.Range(0, MazeSize - 1);
+            int ry = Random.Range(0, MazeSize - 1);
+            Debug.Log(rx + ", " + ry);
+
+            if (data[ry, rx].Contains("K")) 
+            {
+                continue;
+            }
+            else
+            {
+                Debug.Log("Key has been added to room " + rx + " " + ry);
+                data[ry, rx] += 'K';
+                count--;
+            }
+        }
         md.Data = data;
         md.LoadMaze();
 

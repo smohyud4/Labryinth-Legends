@@ -17,8 +17,10 @@ MonoBehaviour:
   - {fileID: 2768127178764828229, guid: d24bc06fb3db5d54ea0db28a0f0fc141, type: 3}
   - {fileID: 2356714329192048665, guid: 91f63a5f9c7fd4a4287083e22162a0d2, type: 3}
   - {fileID: 7253301997556671761, guid: b63ab4e4bf21d6348b55ff7f87e0544f, type: 3}
+  - {fileID: 8852170957041715555, guid: 26e40ec9f173bc14ab2e8bd54507aec3, type: 3}
   itemPrefab:
   - {fileID: 789253653241738544, guid: b25eee13b250b974fa635654eb890ae6, type: 3}
   - {fileID: 0}
   - {fileID: 937847192625947669, guid: e6479c2daffd2f647993498ceef291db, type: 3}
   - {fileID: 8581613641844131875, guid: 7dc7a27bef74cfe44b21121f4c61e9fe, type: 3}
+  - {fileID: 2604705131300095723, guid: e6f57153e9811944c9059220cce30d93, type: 3}
