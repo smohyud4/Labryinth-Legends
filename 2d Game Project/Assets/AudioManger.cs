@@ -7,28 +7,24 @@ public class AudioManger : MonoBehaviour
     public Sound[] sounds;    
     public Sound theme;
     public static AudioManger instance;
-    public bool mainMenu = false;
-    public bool bossroom = false;
+    public bool proceed = false;
    
     void Awake()
     {
-        if (!mainMenu && !bossroom)
+
+        if (proceed)
         {
             if (instance == null)
             {
                 instance = this;
+                DontDestroyOnLoad(gameObject);
+                Debug.Log("Audio not Destroyed!");
             }
             else
             {
                 Destroy(gameObject);
                 return;
             }
-
-            DontDestroyOnLoad(gameObject);
-        }
-
-        if (bossroom) {
-            return;
         }
 
         foreach (Sound s in sounds)
@@ -36,22 +32,19 @@ public class AudioManger : MonoBehaviour
             s.source = gameObject.AddComponent<AudioSource>();
             s.source.clip = s.clip;
             s.source.loop = s.loop;
-            //s.source.volume = 0.5f;
+            s.source.volume = 0.5f;
             //s.source.pitch = 1f;
-            if (s.name == "Sword Swing") s.source.volume = 0.1f;
+            s.source.volume = s.volume;
         }
+
+        theme.source = gameObject.AddComponent<AudioSource>();
+        theme.source.volume = theme.volume;
+        theme.source.clip = theme.clip;
+        theme.source.loop = theme.loop;
     }
     void Start()
     {
-        if (theme.name != "NULL") 
-        {
-            theme.source = gameObject.AddComponent<AudioSource>();
-            theme.source.clip = theme.clip;
-            //theme.source.volume = theme.volume;
-            //theme.source.pitch = theme.pitch;
-            theme.source.loop = theme.loop;
-            theme.source.Play();
-        }
+        if (theme.name != "NULL") theme.source.Play();
     }
     public void Play(string name)
     {

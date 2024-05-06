@@ -54582,6 +54582,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: proceed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
       propertyPath: bossroom
       value: 1
       objectReference: {fileID: 0}
@@ -54593,6 +54597,58 @@ PrefabInstance:
       propertyPath: theme.clip
       value: 
       objectReference: {fileID: 8300000, guid: 3012c75c1cda1f94abdb18e63746fc5c, type: 3}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: theme.loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: theme.name
+      value: Final Boss Theme
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: theme.volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ec0bd686fe3b799438ce17df7335887a, type: 3}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[3].name
+      value: Boss Swing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 105cb202d6ec1c7428d752874b719fac, type: 3}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[4].name
+      value: Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[1].volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[3].volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5790815612620058167, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
       propertyPath: m_Name
       value: Global Audio
@@ -58034,7 +58090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1979879523
 AudioSource:
   m_ObjectHideFlags: 0

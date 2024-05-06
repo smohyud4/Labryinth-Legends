@@ -8,6 +8,7 @@ public class Scenes : MonoBehaviour
     public void loadMainMenu(string sceneName)
     {
         Time.timeScale = 1f;
+        Destroy(GameObject.Find("Global Audio"));
         SceneManager.LoadScene(sceneName);
     }
 }

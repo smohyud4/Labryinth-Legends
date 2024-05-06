@@ -2332,6 +2332,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
+      propertyPath: proceed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328408035777163647, guid: 04c83517ce47d374eb976c72c8f1909c, type: 3}
       propertyPath: mainMenu
       value: 1
       objectReference: {fileID: 0}
@@ -3266,7 +3270,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9dd9644afe41442b7983997b8efc1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEff: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

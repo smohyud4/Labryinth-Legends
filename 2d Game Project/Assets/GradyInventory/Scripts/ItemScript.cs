@@ -28,6 +28,7 @@ public class ItemScript : MonoBehaviour
             if (inventory.Items[i] == keyId) {
                 keycount++;
                 if (keycount == 2) {
+                    Destroy(GameObject.Find("Global Audio"));
                     SceneManager.LoadScene("Rooms/Scenes/BOSS/1");
                 }
             }

@@ -13,8 +13,8 @@ public class BossController : MonoBehaviour
     private float clock;
     private float teleport;
 
-    public AudioSource audioSource;
-    public AudioClip cAttack, cTeleport, cMain;
+    //public AudioSource audioSource;
+    //public AudioClip cAttack, cTeleport, cMain;
     private bool playerInRange = false;
     public float teletimer = 3;
     public float atttimer = 3;
@@ -67,7 +67,7 @@ public class BossController : MonoBehaviour
     {
         if (playerInRange && clock < Time.time)
         {
-            AttackSound();
+            FindObjectOfType<AudioManger>().Play("Boss Swing");
             animator.SetTrigger("Attack");
             if (playerInRange) {
                 inventory.health -= 5;
@@ -77,8 +77,10 @@ public class BossController : MonoBehaviour
         else if (teleport < Time.time) {
 
             StartCoroutine(Teleport());
-                    audioSource.clip = cTeleport;
-        audioSource.Play(); Debug.Log("teleporting to player");
+                    //audioSource.clip = cTeleport;
+        /*audioSource.Play();*/
+            FindObjectOfType<AudioManger>().Play("Teleport"); 
+            Debug.Log("teleporting to player");
             teleport = Time.time + teletimer;
         }
     }
