@@ -9,3 +9,6 @@
 * While at first, our idea was to develop this game for multiple devices such as PC and mobile, We faced a challenge in designing the game for mobile. The challenge that arose was the controller for the mobile gameplay would be completely different which would and the screen would be crowded with buttons.
 * Another significant change came from the design of the main character. The original one did not fit the theme the best and was only able to attack by hand. The new player fits the theme better and can switch between hand or sword.
 * We were able to accomplish our original idea of creating a maze, enemies, and a final boss. Additionally, we had a great learning opportunity when it came to using GitHub with Unity and developing components, prefabs, and scriptable objects.
+
+### Section 2: Customer Value
+* A change from our customer values comes from our measure of success. Due to the game not being fully polished, we have not been able to publish into game stores. Therefore, we have not been able to measure through our original means of customer rating and social media presence. We decided not to release our game during SPRINT 4 due to our thoughts of how the game currently runs.
