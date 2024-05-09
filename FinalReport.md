@@ -56,4 +56,20 @@
   * Reasons:
       * The majority of the group was learning how to use both Unity and GitHub.
       * Since we used GitHub, Unity gave us a lot of merge errors and fatal git pushes. This occurred because of .unity files that were generated and changed while members changed scenes.
-      * Lastly, due to some members having different schedules, jobs, and commitments, we ran out time to add all the features we wished for. 
+      * Lastly, due to some members having different schedules, jobs, and commitments, we ran out time to add all the features we wished for.
+
+### Section 6: Reflection
+* What went well:
+    * We were able to meet at least once a week to clarify any goals or struggles that needed to be worked on.
+    * Deadlines were being met for each goal that was set in a prior meeting.
+    * Members were able to work out there issues by learning through different resources online.
+    * There were a lot of resources available for the Unity Engine.
+    * The PC version of this game is working properly, with no found glitches yet.
+* What didn't go well:
+    * Unity is not easy to set up with GitHub. We experienced a lot of merging problems due to some of the generated files from Unity. We ended needing to create a large .gitignore file.
+    * Our initial workflow was to create our own separate branches to work on different features. This worked partially, but it was not as in sync as we hoped.
+    * We were not able to develop for a mobile phone version of the game.
+
+  * Final Thoughts:
+      * Success or Failure
+          * As a group, we believe the project was a success. Throughout the semester, we sharpened up on C#, got comfortable with GitHub, learned a lot about Unity and how powerful it is, and worked as a team to complete something we set out for. We were able to produce a functioning game that we enjoy.
