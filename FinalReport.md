@@ -12,3 +12,25 @@
 
 ### Section 2: Customer Value
 * A change from our customer values comes from our measure of success. Due to the game not being fully polished, we have not been able to publish into game stores. Therefore, we have not been able to measure through our original means of customer rating and social media presence. We decided not to release our game during SPRINT 4 due to our thoughts of how the game currently runs.
+
+### Section 3: Technology
+* The Unity Engine will be the primary technology that we use due to the robust amount of pre-existing software tools that it has and the supportive community with plenty of documentation allowing for a more streamlined development process.
+* Testing - The Unity Engine allows developers to play their game as they develop it. It allows for playing on the computer that the game engine is installed on. We used this to test the game as we made it for bugs and to see if the new scripts and components worked as intended.
+
+* Maze:
+
+    ![image](./pictures/Maze.png)
+
+* Enemy with pathfinding:
+
+    ![image](./pictures/Enemy.png)
+
+* Final-Boss Room:
+
+    ![image](./pictures/Boss.png)
+
+* Hero:
+
+    ![image](./pictures/Hero.png)
+
+* All of the technology we decided to use in the beginning of the semester is what we stuck with throughout the project lifecycle.
