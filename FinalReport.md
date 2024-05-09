@@ -11,11 +11,14 @@
 * We were able to accomplish our original idea of creating a maze, enemies, and a final boss. Additionally, we had a great learning opportunity when it came to using GitHub with Unity and developing components, prefabs, and scriptable objects.
 
 ### Section 2: Customer Value
-* A change from our customer values comes from our measure of success. Due to the game not being fully polished, we have not been able to publish into game stores. Therefore, we have not been able to measure through our original means of customer rating and social media presence. We decided not to release our game during SPRINT 4 due to our thoughts of how the game currently runs.
+* A change in our customer values comes from our measure of success. Due to the game not being fully polished, we have not been able to publish it to game stores. Therefore, we have not been able to measure through our original means of customer rating and social media presence. We decided not to release our game during SPRINT 4 due to our thoughts on how the game currently runs.
 
 ### Section 3: Technology
-* The Unity Engine will be the primary technology that we use due to the robust amount of pre-existing software tools that it has and the supportive community with plenty of documentation allowing for a more streamlined development process.
-* Testing - The Unity Engine allows developers to play their game as they develop it. It allows for playing on the computer that the game engine is installed on. We used this to test the game as we made it for bugs and to see if the new scripts and components worked as intended.
+* The Unity Engine is the primary technology we used due to its robust amount of pre-existing software tools and the supportive community with plenty of documentation allowing for a more streamlined development process.
+* Testing 
+    * Towards the end of development, we manually played our game and attempted to use all of its features to find errors.
+    * In this process, we identified audio and pausing bugs in between loading scenes. Specifically, the game would not unpause after a scene transition, and audio from the previous scene would carry through to the next scene.
+    * To fix these, we reset the timescale to 1 for every scene transition and utilized Unity's Object.Destroy API. With the Destroy() function, we were able to destroy the duplicate Global Audio GameObject that would appear. This occurred because in our main maze scene, the Global Audio Object was intended not to Destroy on load because the main theme and audio would remain the same. However, the Boss Room and Main Menu had their own themes, so transitioning to those scenes would have concurrent themes.
 
 * Maze:
 
@@ -33,7 +36,7 @@
 
     ![image](./pictures/Hero.png)
 
-* All of the technology we decided to use in the beginning of the semester is what we stuck with throughout the project lifecycle.
+* All of the technology we decided to use at the beginning of the semester is what we stuck with throughout the project lifecycle.
 
 ### Section 4: Team
 * Roles
@@ -43,7 +46,7 @@
         * Bhumir was in charge of creating a different maze each time it loaded up so that no maze was the same. Additionally, he created the playable rooms.
     * Brian: Enemy Creation and Attack
         * Brian was in charge of creating the enemy animations, and attacks. Furthermore, he created a script that would target the player if he got close.
-    * Sully: Music and UI
+    * Sully: Audio Management and UI
         * Sully was in charge of the music that would be played on the main menu and during gameplay. Additionally, he was in charge of creating different menus such as the main menu and pause menu. Finally, he also created the health bar UI for the player and the final boss.
     * Tanner: Player Creation and Movement
         * Tanner was in charge of creating the main player. He was able to accomplish the animation, attack, and different actions for different buttons. For example, he was able to toggle if the player had a sword and shield if "C" was pressed, this allowed the player to move faster or slower depending on the toggle.
@@ -56,19 +59,19 @@
   * Reasons:
       * The majority of the group was learning how to use both Unity and GitHub.
       * Since we used GitHub, Unity gave us a lot of merge errors and fatal git pushes. This occurred because of .unity files that were generated and changed while members changed scenes.
-      * Lastly, due to some members having different schedules, jobs, and commitments, we ran out time to add all the features we wished for.
+      * Lastly, due to some members having different schedules, jobs, and commitments, we ran out of time to add all the features we wished for.
 
 ### Section 6: Reflection
 * What went well:
     * We were able to meet at least once a week to clarify any goals or struggles that needed to be worked on.
     * Deadlines were being met for each goal that was set in a prior meeting.
-    * Members were able to work out there issues by learning through different resources online.
+    * Members were able to work out their issues by learning through different resources online.
     * There were a lot of resources available for the Unity Engine.
     * The PC version of this game is working properly, with no found glitches yet.
 * What didn't go well:
-    * Unity is not easy to set up with GitHub. We experienced a lot of merging problems due to some of the generated files from Unity. We ended needing to create a large .gitignore file.
+    * Unity is not easy to set up with GitHub. We experienced a lot of merging problems due to some of the generated files from Unity. We ended up needing to create a large .gitignore file.
     * Our initial workflow was to create our own separate branches to work on different features. This worked partially, but it was not as in sync as we hoped.
-    * We were not able to develop for a mobile phone version of the game.
+    * We were not able to develop a mobile phone version of the game.
 
   * Final Thoughts:
       * Success or Failure
