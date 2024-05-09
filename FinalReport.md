@@ -49,3 +49,11 @@
         * Tanner was in charge of creating the main player. He was able to accomplish the animation, attack, and different actions for different buttons. For example, he was able to toggle if the player had a sword and shield if "C" was pressed, this allowed the player to move faster or slower depending on the toggle.
     * Role Changes:
         * While these roles were pretty much static, we did change to help out each other if they needed something first to be built.
+     
+### Section 5: Project Management
+  * Did we meet the project goal?
+      * Sadly we didn't meet all the project goals we initially had. However, we were able to finish the minimal system and added some features to it as well.
+  * Reasons:
+      * The majority of the group was learning how to use both Unity and GitHub.
+      * Since we used GitHub, Unity gave us a lot of merge errors and fatal git pushes. This occurred because of .unity files that were generated and changed while members changed scenes.
+      * Lastly, due to some members having different schedules, jobs, and commitments, we ran out time to add all the features we wished for. 
