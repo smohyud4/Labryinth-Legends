@@ -34,3 +34,18 @@
     ![image](./pictures/Hero.png)
 
 * All of the technology we decided to use in the beginning of the semester is what we stuck with throughout the project lifecycle.
+
+### Section 4: Team
+* Roles
+    * Grady: Project Leader
+        * Grady was the project leader since he had the most experience with Unity. He would go through everyone's progress to help out and make suggestions. Additionally, he created the inventory system, the final boss, and put everyone's components together.
+    * Bhumir: Maze Generation and Room Creation
+        * Bhumir was in charge of creating a different maze each time it loaded up so that no maze was the same. Additionally, he created the playable rooms.
+    * Brian: Enemy Creation and Attack
+        * Brian was in charge of creating the enemy animations, and attacks. Furthermore, he created a script that would target the player if he got close.
+    * Sully: Music and UI
+        * Sully was in charge of the music that would be played on the main menu and during gameplay. Additionally, he was in charge of creating different menus such as the main menu and pause menu. Finally, he also created the health bar UI for the player and the final boss.
+    * Tanner: Player Creation and Movement
+        * Tanner was in charge of creating the main player. He was able to accomplish the animation, attack, and different actions for different buttons. For example, he was able to toggle if the player had a sword and shield if "C" was pressed, this allowed the player to move faster or slower depending on the toggle.
+    * Role Changes:
+        * While these roles were pretty much static, we did change to help out each other if they needed something first to be built.
