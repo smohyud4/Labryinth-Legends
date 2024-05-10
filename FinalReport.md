@@ -37,8 +37,8 @@
     ![image](./pictures/Hero.png)
 
 * Demo: (includes changes since presentation)
-
-     ![Demo](./pictures/Project Demo.mp4)
+  
+    * Check out ./pictures/Project Demo.mp4
 
 * All of the technology we decided to use at the beginning of the semester is what we stuck with throughout the project lifecycle.
 
