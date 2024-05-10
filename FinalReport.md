@@ -36,7 +36,7 @@
 
     ![image](./pictures/Hero.png)
 
-* Demo: (includes changes since presentation)
+* Demo: (includes changes since presentation including final boss)
   
     * Check out ./pictures/Project Demo.mp4
 
