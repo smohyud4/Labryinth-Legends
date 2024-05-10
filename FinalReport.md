@@ -36,6 +36,10 @@
 
     ![image](./pictures/Hero.png)
 
+* Demo: (includes changes since presentation)
+
+     [![Demo](./pictures/Boss.png)](./pictures/Project Demo.mp4)
+
 * All of the technology we decided to use at the beginning of the semester is what we stuck with throughout the project lifecycle.
 
 ### Section 4: Team
